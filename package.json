@@ -1,6 +1,6 @@
 {
     "name": "visionweb",
-    "version": "3.1.0",
+    "version": "3.1.1",
     "description": "JavaScript SDK that encapsulates the Vision HTTP API",
     "main": "dist/VisionWeb.node.js",
     "scripts": {
@@ -14,11 +14,6 @@
         "test:browser": "npm run-script newaccount && node scripts/test-browser.js && npx karma start --single-run --browsers ChromeHeadless",
         "coverage": "npm run-script test:browser && npm run-script test",
         "btest": "npm run build:dev && npm run test"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "node ./scripts/pre-commit.js"
-        }
     },
     "dependencies": {
         "@babel/runtime": "^7.0.0",
@@ -73,5 +68,17 @@
         "webpack-cli": "^3.1.0",
         "webpack-node-externals": "^1.7.2"
     },
-    "license": "MIT"
+    "author": {
+        "name": "vision",
+        "url": "https://github.com/vision-consensus"
+    },
+    "contributors": [
+        {
+            "name": "VISION-US",
+            "url": "https://github.com/vision-us"
+        }
+    ],
+    "homepage": "https://github.com/vision-consensus/visionweb.git",
+    "license": "MIT",
+    "repository": "https://github.com/vision-consensus/visionweb.git"
 }
